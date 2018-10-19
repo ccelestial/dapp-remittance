@@ -14,7 +14,7 @@ var remittance_address;
 //     window.web3 = new Web3(web3.currentProvider);
 // } else {
 console.log('TEST!@');
-window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7000")); 
+window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 // }
 
 require("./utils/utils.js"); 

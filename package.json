@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "builddev": "truffle compile && truffle migrate --reset && yarn dev",
-    "build": "truffle compile && truffle migrate --reset && yarn prod",
+    "tfcomp": "truffle compile && truffle migrate --reset",
+    "builddev": "yarn tfcomp && yarn dev",
+    "build": "yarn tfcomp && yarn prod",
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
     "start": "http-serve /build/app"
